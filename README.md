@@ -173,6 +173,6 @@ El usuario puede ver en esta sección todos los productos previamente registrado
 
 Al hacer clic en el botón correspondiente, el usuario recibe un mensaje de despedida y es redirigido nuevamente a la página de inicio.
 
-![Imagen de Cierre de Sesión](![Imagen de Gestión del Catálogo](/public/img/9.%20Cerrando%20sesión.png)
+![Imagen de Gestión del Catálogo](/public/img/9.%20Cerrando%20sesión.png)
 
 
