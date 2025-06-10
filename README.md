@@ -2,28 +2,27 @@
 
 ## Descripción:
 
-ProductHub es una aplicación web diseñada para la gestión integral de productos.  
-Permite a los usuarios registrarse, iniciar sesión y administrar un catálogo de productos (crear, leer, actualizar y eliminar productos.  
+ProductHub es una aplicación web diseñada para la gestión integral de productos. Permite a los usuarios registrarse, iniciar sesión y administrar un catálogo de productos (crear, leer, actualizar y eliminar productos).  
 Incluye autenticación de usuarios y una interfaz moderna e intuitiva.
 
 ---
 
 ## Autores:
 
-    •	Arturo Del Villar López
-    •	Carlos Mario López Medina
+- Arturo Del Villar López  
+- Carlos Mario López Medina
 
 ---
 
 ## Tecnologías empleadas:
 
-    •	Next.js: Framework principal para el desarrollo de la aplicación web.
-    •	React: Biblioteca para la construcción de interfaces de usuario.
-    •	TypeScript: Tipado estático para mayor robustez en el código.
-    •	Tailwind CSS: Utilizado para el diseño y estilos responsivos.
-    •	Lucide React: Iconografía moderna.
-    •	LocalStorage: Persistencia de usuarios y productos en el navegador (modo demo, sin backend).
-    •	PostCSS & Autoprefixer: Procesamiento de CSS.
+- Next.js: Framework principal para el desarrollo de la aplicación web.
+- React: Biblioteca para la construcción de interfaces de usuario.
+- TypeScript: Tipado estático para mayor robustez en el código.
+- Tailwind CSS: Utilizado para el diseño y estilos responsivos.
+- Lucide React: Iconografía moderna.
+- LocalStorage: Persistencia de usuarios y productos en el navegador (modo demo, sin backend).
+- PostCSS & Autoprefixer: Procesamiento de CSS.
 
 ---
 
@@ -63,8 +62,8 @@ No utiliza una arquitectura cliente-servidor tradicional con backend propio, ya 
 
 ## ¿Cómo ejecutarlo desde VSCode?
 
-    Para ejecutar el proyecto desde vscode, se necesita tener instalado previamente Node.js en el equipo.  
-    Luego:
+Para ejecutar el proyecto desde vscode, se necesita tener instalado previamente Node.js en el equipo.  
+Luego:
 
 1.	Clonar el repositorio desde GitHub
     - _git clone https://github.com/KennyRodMad/project.git_
@@ -90,9 +89,9 @@ No utiliza una arquitectura cliente-servidor tradicional con backend propio, ya 
 
 ## Notas
 
-    •	No requiere base de datos ni backend para pruebas, ya que usa LocalStorage.
-    •	Puedes modificar los estilos fácilmente usando Tailwind CSS.
-    •	El código está organizado para facilitar la escalabilidad y el mantenimiento.
+- No requiere base de datos ni backend para pruebas, ya que usa LocalStorage.
+- Puedes modificar los estilos fácilmente usando Tailwind CSS.
+- El código está organizado para facilitar la escalabilidad y el mantenimiento.
 
 ---
 
