@@ -2,10 +2,9 @@
 
 ## Descripción:
 
-    ProductHub es una aplicación web diseñada para la gestión integral de productos.  
-    Permite a los usuarios registrarse, iniciar sesión y administrar un catálogo  
-    de productos (crear, leer, actualizar y eliminar productos).  
-    Incluye autenticación de usuarios y una interfaz moderna e intuitiva.
+ProductHub es una aplicación web diseñada para la gestión integral de productos.  
+Permite a los usuarios registrarse, iniciar sesión y administrar un catálogo de productos (crear, leer, actualizar y eliminar productos.  
+Incluye autenticación de usuarios y una interfaz moderna e intuitiva.
 
 ---
 
@@ -54,17 +53,11 @@
 
 ## Arquitectura:
 
-    El sistema del proyecto utiliza una arquitectura basada en componentes, propia de  
-    aplicaciones desarrolladas con Next.js y React. Esto significa que la aplicación  
-    está estructurada en módulos independientes y reutilizables (componentes),  
-    cada uno encargado de una funcionalidad específica de la interfaz de usuario.
+El sistema del proyecto utiliza una arquitectura basada en componentes, propia de aplicaciones desarrolladas con Next.js y React. Esto significa que la aplicación está estructurada en módulos independientes y reutilizables (componentes), cada uno encargado de una funcionalidad específica de la interfaz de usuario.
 
-    Además, sigue el patrón Single Page Application (SPA), donde la navegación y la gestión  
-    de estados se realizan principalmente en el lado del cliente, aunque Next.js permite  
-    el renderizado del lado del servidor (SSR) para mejorar el rendimiento y SEO.
+Además, sigue el patrón Single Page Application (SPA), donde la navegación y la gestión de estados se realizan principalmente en el lado del cliente, aunque Next.js permite el renderizado del lado del servidor (SSR) para mejorar el rendimiento y SEO.  
 
-    No utiliza una arquitectura cliente-servidor tradicional con backend propio,  
-    ya que la persistencia de datos se maneja en el LocalStorage del navegador.
+No utiliza una arquitectura cliente-servidor tradicional con backend propio, ya que la persistencia de datos se maneja en el LocalStorage del navegador.
 
 ---
 
