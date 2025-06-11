@@ -125,7 +125,7 @@ El usuario debe completar un formulario con los campos requeridos. Si la operaci
 
 Desde esta pantalla, el usuario puede ingresar al sistema mediante su nombre de usuario y contraseña. En caso de autenticación exitosa, será dirigido automáticamente al panel de usuario.
 
-![Imagen de Inicio de Sesión](/public/img/4.%203.%20Formulario%20de%20inicio%20de%20sesión.png)
+![Imagen de Inicio de Sesión](/public/img/4.%20Formulario%20de%20inicio%20de%20sesión.png)
 
 
 
