@@ -61,23 +61,23 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
-        <div className="mb-6">
-          <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-            <ArrowLeft className="mr-2 h-4 w-4" />
+      <div className="w-full max-w-xl"> {/* max-w-xl para card más ancha */}
+        <div className="mb-8"> {/* más separación arriba */}
+          <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors text-lg font-medium"> {/* texto más grande */}
+            <ArrowLeft className="mr-2 h-5 w-5" /> {/* icono más grande */}
             Volver al inicio
           </Link>
         </div>
 
-        <Card>
-          <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold">Iniciar Sesión</CardTitle>
-            <CardDescription>Ingresa tus credenciales para acceder a ProductHub</CardDescription>
+        <Card className="shadow-lg border-2 border-blue-100"> {/* borde más visible */}
+          <CardHeader className="text-center pb-2">
+            <CardTitle className="text-3xl font-bold">Iniciar Sesión</CardTitle> {/* título más grande */}
+            <CardDescription className="text-lg mt-2">Ingresa tus credenciales para acceder a ProductHub</CardDescription> {/* descripción más grande */}
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-6"> {/* más espacio entre campos */}
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email" className="text-base font-semibold">Email</Label> {/* label más grande */}
                 <Input
                   id="email"
                   type="email"
@@ -85,11 +85,12 @@ export default function LoginPage() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
+                  className="h-14 text-lg px-5" /* input más alto y texto grande */
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="password">Contraseña</Label>
+                <Label htmlFor="password" className="text-base font-semibold">Contraseña</Label>
                 <Input
                   id="password"
                   type="password"
@@ -97,24 +98,25 @@ export default function LoginPage() {
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                   required
+                  className="h-14 text-lg px-5"
                 />
               </div>
 
               {message && (
-                <Alert className="border-red-200 bg-red-50">
-                  <AlertCircle className="h-4 w-4 text-red-600" />
+                <Alert className="border-red-200 bg-red-50 text-base py-4"> {/* alerta más grande */}
+                  <AlertCircle className="h-5 w-5 text-red-600" />
                   <AlertDescription className="text-red-800">{message}</AlertDescription>
                 </Alert>
               )}
 
-              <Button type="submit" className="w-full" disabled={isLoading}>
+              <Button type="submit" className="w-full h-14 text-lg font-bold" disabled={isLoading}>
                 {isLoading ? "Iniciando sesión..." : "Iniciar Sesión"}
               </Button>
             </form>
 
-            <div className="mt-6 text-center text-sm">
+            <div className="mt-8 text-center text-base"> {/* texto más grande */}
               ¿No tienes una cuenta?{" "}
-              <Link href="/register" className="text-blue-600 hover:text-blue-800 font-medium">
+              <Link href="/register" className="text-blue-600 hover:text-blue-800 font-semibold">
                 Regístrate
               </Link>
             </div>

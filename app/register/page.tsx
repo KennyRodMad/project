@@ -97,23 +97,23 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
-        <div className="mb-6">
-          <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-            <ArrowLeft className="mr-2 h-4 w-4" />
+      <div className="w-full max-w-xl"> {/* Cambiado de max-w-md a max-w-xl */}
+        <div className="mb-8"> {/* Más espacio arriba */}
+          <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors text-lg"> {/* Texto más grande */}
+            <ArrowLeft className="mr-2 h-5 w-5" /> {/* Icono más grande */}
             Volver al inicio
           </Link>
         </div>
 
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold">Crear Cuenta</CardTitle>
-            <CardDescription>Ingresa tus datos para registrarte en ProductHub</CardDescription>
+            <CardTitle className="text-3xl font-bold">Crear Cuenta</CardTitle> {/* Título más grande */}
+            <CardDescription className="text-lg">Ingresa tus datos para registrarte en ProductHub</CardDescription> {/* Descripción más grande */}
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Nombre completo</Label>
+            <form onSubmit={handleSubmit} className="space-y-6"> {/* Más espacio entre campos */}
+              <div className="space-y-3"> {/* Más espacio entre label/input */}
+                <Label htmlFor="name" className="text-lg">Nombre completo</Label>
                 <Input
                   id="name"
                   type="text"
@@ -121,11 +121,12 @@ export default function RegisterPage() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
+                  className="h-12 text-lg px-4" // Input más alto y texto más grande
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+              <div className="space-y-3">
+                <Label htmlFor="email" className="text-lg">Email</Label>
                 <Input
                   id="email"
                   type="email"
@@ -133,11 +134,12 @@ export default function RegisterPage() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
+                  className="h-12 text-lg px-4"
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="password">Contraseña</Label>
+              <div className="space-y-3">
+                <Label htmlFor="password" className="text-lg">Contraseña</Label>
                 <Input
                   id="password"
                   type="password"
@@ -145,11 +147,12 @@ export default function RegisterPage() {
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                   required
+                  className="h-12 text-lg px-4"
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="confirmPassword">Confirmar contraseña</Label>
+              <div className="space-y-3">
+                <Label htmlFor="confirmPassword" className="text-lg">Confirmar contraseña</Label>
                 <Input
                   id="confirmPassword"
                   type="password"
@@ -157,29 +160,24 @@ export default function RegisterPage() {
                   value={formData.confirmPassword}
                   onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
                   required
+                  className="h-12 text-lg px-4"
                 />
               </div>
 
               {message && (
-                <Alert className={isSuccess ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"}>
-                  {isSuccess ? (
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                  ) : (
-                    <AlertCircle className="h-4 w-4 text-red-600" />
-                  )}
-                  <AlertDescription className={isSuccess ? "text-green-800" : "text-red-800"}>
-                    {message}
-                  </AlertDescription>
+                <Alert className="border-red-200 bg-red-50 text-lg">
+                  <AlertCircle className="h-5 w-5 text-red-600" />
+                  <AlertDescription className="text-red-800">{message}</AlertDescription>
                 </Alert>
               )}
 
-              <Button type="submit" className="w-full" disabled={isLoading}>
+              <Button type="submit" className="w-full h-12 text-lg" disabled={isLoading}>
                 {isLoading ? "Registrando..." : "Registrarse"}
               </Button>
             </form>
 
-            <div className="mt-6 text-center text-sm">
-              ¿Ya tienes una cuenta?{" "}
+            <div className="mt-8 text-center text-lg"> {/* Texto más grande */}
+              ¿Ya tienes una cuenta?{' '}
               <Link href="/login" className="text-blue-600 hover:text-blue-800 font-medium">
                 Inicia sesión
               </Link>
